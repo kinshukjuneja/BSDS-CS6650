@@ -12,7 +12,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class MyClient implements Runnable {
     private Client client; //To be initialized when creating an instance of this class
     private WebTarget webTarget; //Created after ip and port is given at terminal
-    private String threadCount = "1000"; //Default: 10
+    private String threadCount = "10"; //Default: 10
     private String iterations = "100"; //Default: 100
     private String ip = "35.161.211.30"; //Default: "35.161.211.30"
     private String port = "8080"; //Default: 8080
@@ -86,7 +86,8 @@ public class MyClient implements Runnable {
     public void run() {
         for(int i = 0; i < Integer.parseInt(iterations); ++i) {
             /**
-             * GET
+             * GET: To test GET requests individually, please comment the
+             * below POST.
              */
             Result.incrementRequestSent();
             long startTimeGet = System.currentTimeMillis();
@@ -99,10 +100,9 @@ public class MyClient implements Runnable {
             Result.addLatency(endTimeGet - startTimeGet);
 
             /**
-             * POST: To test POST requests, please comment out the code below
-             * and comment GET.
+             * POST: To test POST requests individually, please comment the
+             * above GET.
              */
-            /*
             long startTimePost = System.currentTimeMillis();
             Result.addStartTime(startTimePost);
             Result.incrementRequestSent();
@@ -112,7 +112,6 @@ public class MyClient implements Runnable {
             }
             long endTimePost = System.currentTimeMillis();
             Result.addLatency(endTimePost - startTimePost);
-            */
         }
     }
     static class Result {
