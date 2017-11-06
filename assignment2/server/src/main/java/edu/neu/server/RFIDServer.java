@@ -2,7 +2,6 @@ package edu.neu.server;
 
 import edu.neu.server.dao.SkierDataDao;
 import edu.neu.server.model.SkierData;
-
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.sql.SQLException;
@@ -33,13 +32,10 @@ public class RFIDServer {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public void postData(SkierData data) throws SQLException {
-        //skierDataDao.insert(data); // fast test
-        // Uncomment for actual test
         int verticalMetres = calculateVertical(data.getLiftID());
         skierDataDao.insert(data, verticalMetres);
-
     }
-    //
+
     public int calculateVertical(int liftID) {
         if(liftID >= 1 && liftID <= 10) return VERTICAL_VALUES[0];
         else if(liftID >= 11 && liftID <= 20) return VERTICAL_VALUES[1];

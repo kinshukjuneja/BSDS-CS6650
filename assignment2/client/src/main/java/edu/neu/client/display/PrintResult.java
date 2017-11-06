@@ -1,13 +1,10 @@
 package edu.neu.client.display;
 
-
 import edu.neu.client.SkierClient;
 import edu.neu.client.statistics.Result;
 import edu.neu.client.test.TestDataUtil;
-import org.apache.log4j.Logger;
 
 public class PrintResult {
-    //private static final Logger logger = Logger.getLogger(PrintResult.class.getClass());
 
     private void printThreadCount(SkierClient skierClient) {
         System.out.println("Threads: " + skierClient.getNumOfThreads());
@@ -46,7 +43,7 @@ public class PrintResult {
     }
 
     public static void printToCsvFormat(Result result) {
-        for(int i = 0; i < result.getStartTimeList().size(); ++i) {
+        for (int i = 0; i < result.getStartTimeList().size(); ++i) {
             System.out.println(result.getStartTimeList().get(i) + "," + result.getLatencyList().get(i));
         }
     }
@@ -62,6 +59,6 @@ public class PrintResult {
         printMedianLatency(result);
         printCalculatedPercentile(99, result);
         printCalculatedPercentile(95, result);
-        printToCsvFormat(result);     //uncomment for graphs
+        printToCsvFormat(result);
     }
 }

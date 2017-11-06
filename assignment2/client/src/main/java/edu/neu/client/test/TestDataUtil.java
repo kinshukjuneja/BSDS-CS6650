@@ -2,7 +2,6 @@ package edu.neu.client.test;
 
 import edu.neu.client.SkierClient;
 import edu.neu.client.model.RFIDLiftData;
-
 import javax.ws.rs.client.ClientBuilder;
 import java.util.ArrayList;
 import java.util.List;

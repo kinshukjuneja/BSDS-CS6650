@@ -1,7 +1,6 @@
 package edu.neu.client.statistics;
 
 import org.jetbrains.annotations.Contract;
-
 import java.util.Arrays;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -9,8 +8,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Result {
-    private AtomicInteger requestSent = new AtomicInteger(800000); //make it 0
-    private AtomicInteger requestSuccess = new AtomicInteger(800000); //make it 0
+    private AtomicInteger requestSent = new AtomicInteger(0);
+    private AtomicInteger requestSuccess = new AtomicInteger(0);
     private CopyOnWriteArrayList<Long> startTimeList = new CopyOnWriteArrayList<>();
     private CopyOnWriteArrayList<Long> latencyList = new CopyOnWriteArrayList<>();
     private double mean;

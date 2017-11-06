@@ -10,7 +10,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class CSVParser {
-    private static final String CSV_FILE_DAY1 = "/Users/Kinsh/Desktop/BSDSAssignment2Day1.csv";  ///home/ec2-user/BSDSAssignment2Day1.csv
+    private static final String CSV_FILE_DAY1 = "/Users/Kinsh/Desktop/BSDSAssignment2Day1.csv";
     private static final String CSV_FILE_DAY2 = "/Users/Kinsh/Desktop/BSDSAssignment2Day2.csv";
     private CSVReader reader;
 
@@ -21,10 +21,11 @@ public class CSVParser {
             else return;
             String[] line;
             RFIDLiftData parseRFID;
-            //if((reader.readNext()) != null) { //delete or uncomment for actual code submission and add it's closing braces
-            while ((line = reader.readNext()) != null) {
-                parseRFID = new RFIDLiftData(Integer.valueOf(line[0]), Integer.valueOf(line[1]), Integer.valueOf(line[2]), Integer.valueOf(line[3]), Integer.valueOf(line[4]));
-                TestDataUtil.addRFIDLiftData(parseRFID);
+            if((reader.readNext()) != null) {
+                while ((line = reader.readNext()) != null) {
+                    parseRFID = new RFIDLiftData(Integer.valueOf(line[0]), Integer.valueOf(line[1]), Integer.valueOf(line[2]), Integer.valueOf(line[3]), Integer.valueOf(line[4]));
+                    TestDataUtil.addRFIDLiftData(parseRFID);
+                }
             }
         } catch (IOException ex) {
             Logger.getLogger(CSVParser.class.getName()).log(Level.SEVERE, null, ex);

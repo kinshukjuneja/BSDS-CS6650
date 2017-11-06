@@ -31,7 +31,7 @@
       <file leaf-file-name="SkierData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/model/SkierData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
+            <state relative-caret-position="521">
               <caret line="73" column="57" lean-forward="false" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
               <folding>
                 <element signature="e#1519#1520#0" expanded="true" />
@@ -41,19 +41,74 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SkierDataDao.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SkierDataDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/dao/SkierDataDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-605">
-              <caret line="97" column="29" lean-forward="false" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
+            <state relative-caret-position="600">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1509756021000" expanded="true" signature="686:807" ph="INSERT INTO skierdata... " />
-                <marker date="1509756021000" expanded="true" signature="1928:2046" ph="INSERT INTO skierdata... " />
-                <marker date="1509756021000" expanded="true" signature="3166:3246" ph="SELECT COUNT... skierdata" />
-                <marker date="1509756021000" expanded="true" signature="4503:4515" ph="DELETE FROM " />
-                <marker date="1509756021000" expanded="true" signature="4503:4524" ph="DELETE FROM " />
+                <marker date="1509939786000" expanded="true" signature="704:806" ph="INSERT INTO skierdata... " />
+                <marker date="1509939786000" expanded="true" signature="1923:2003" ph="SELECT COUNT... skierdata" />
+                <marker date="1509939786000" expanded="true" signature="3257:3269" ph="DELETE FROM " />
+                <marker date="1509939786000" expanded="true" signature="3257:3278" ph="DELETE FROM " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JAVA/edu.neu.server" pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/edu.neu.server">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>edu.neu.server</OriginalElement>
+              <nodes>
+                <node x="302.0" y="0.0">edu.neu.server.model.SkierData</node>
+                <node x="173.5" y="514.0">edu.neu.server.RFIDServer</node>
+                <node x="0.0" y="22.0">edu.neu.server.Util.ConnectionManager</node>
+                <node x="50.06666666666666" y="279.0">edu.neu.server.dao.SkierDataDao</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="edu.neu.server.RFIDServer" target="edu.neu.server.dao.SkierDataDao">
+                  <point x="0.0" y="-70.0" />
+                  <point x="291.0" y="489.0" />
+                  <point x="288.56666666666666" y="489.0" />
+                  <point x="79.5" y="92.5" />
+                </edge>
+                <edge source="edu.neu.server.dao.SkierDataDao" target="edu.neu.server.Util.ConnectionManager">
+                  <point x="0.0" y="-92.5" />
+                  <point x="209.06666666666666" y="254.0" />
+                  <point x="211.5" y="254.0" />
+                  <point x="70.5" y="92.5" />
+                </edge>
+                <edge source="edu.neu.server.dao.SkierDataDao" target="edu.neu.server.model.SkierData">
+                  <point x="106.0" y="-92.5" />
+                  <point x="315.06666666666666" y="254.0" />
+                  <point x="365.0" y="254.0" />
+                  <point x="-63.0" y="114.5" />
+                </edge>
+                <edge source="edu.neu.server.RFIDServer" target="edu.neu.server.model.SkierData">
+                  <point x="78.33333333333331" y="-70.0" />
+                  <point x="369.3333333333333" y="489.0" />
+                  <point x="491.0" y="489.0" />
+                  <point x="63.0" y="114.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="-132.0" y="223.0" />
+              <SelectedNodes>
+                <node>edu.neu.server.dao.SkierDataDao</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Constructors</Category>
+                <Category>Methods</Category>
+                <Category>Properties</Category>
+                <Category>Inner Classes</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -61,20 +116,18 @@
       <file leaf-file-name="ConnectionManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/Util/ConnectionManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="39" column="59" lean-forward="false" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
-              <folding>
-                <marker date="1509468790000" expanded="true" signature="1119:1384" ph="CREATE TABLE... IF" />
-              </folding>
+            <state relative-caret-position="-94">
+              <caret line="20" column="58" lean-forward="false" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RFIDServer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RFIDServer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/RFIDServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+            <state relative-caret-position="180">
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,8 +158,8 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/server/model/SkierStats.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/server/model/SkierData.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/server/threads/PostServerToDBMultiThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/neu/server/Util/ConnectionManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/server/RFIDServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/neu/server/Util/ConnectionManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/server/dao/SkierDataDao.java" />
       </list>
     </option>
@@ -132,7 +185,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="76" />
+    <option name="y" value="41" />
     <option name="width" value="1440" />
     <option name="height" value="798" />
   </component>
@@ -151,6 +205,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -215,10 +273,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -226,6 +280,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -479,12 +536,17 @@
       <workItem from="1509408221233" duration="21000" />
       <workItem from="1509408353841" duration="23131000" />
       <workItem from="1509577264225" duration="1782000" />
-      <workItem from="1509737655135" duration="4878000" />
+      <workItem from="1509737655135" duration="5076000" />
+      <workItem from="1509819707836" duration="5160000" />
+      <workItem from="1509846902203" duration="620000" />
+      <workItem from="1509912514609" duration="174000" />
+      <workItem from="1509913243271" duration="177000" />
+      <workItem from="1509917362211" duration="1074000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30880000" />
+    <option name="totallyTimeSpent" value="38283000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -496,7 +558,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="798" extended-state="0" />
+    <frame x="76" y="41" width="1440" height="798" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -515,13 +578,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49217638" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49217638" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24749643" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25822604" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32816902" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -529,6 +591,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32816902" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -542,6 +605,159 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/model/SkierData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="73" column="57" lean-forward="false" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
+          <folding>
+            <element signature="e#1519#1520#0" expanded="true" />
+            <element signature="e#1583#1584#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/dao/SkierDataDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="115" column="15" lean-forward="false" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1509939786000" expanded="true" signature="704:806" ph="INSERT INTO skierdata... " />
+            <marker date="1509939786000" expanded="true" signature="1923:2003" ph="SELECT COUNT... skierdata" />
+            <marker date="1509939786000" expanded="true" signature="3257:3269" ph="DELETE FROM " />
+            <marker date="1509939786000" expanded="true" signature="3257:3278" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/Util/ConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="37" column="55" lean-forward="false" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/RFIDServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="54" column="34" lean-forward="false" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="83" column="20" lean-forward="false" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/model/SkierData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="73" column="57" lean-forward="false" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
+          <folding>
+            <element signature="e#1519#1520#0" expanded="true" />
+            <element signature="e#1583#1584#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/Util/ConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="37" column="55" lean-forward="false" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/RFIDServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="54" column="34" lean-forward="false" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/dao/SkierDataDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="115" column="15" lean-forward="false" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1509939786000" expanded="true" signature="704:806" ph="INSERT INTO skierdata... " />
+            <marker date="1509939786000" expanded="true" signature="1923:2003" ph="SELECT COUNT... skierdata" />
+            <marker date="1509939786000" expanded="true" signature="3257:3269" ph="DELETE FROM " />
+            <marker date="1509939786000" expanded="true" signature="3257:3278" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/model/SkierData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="73" column="57" lean-forward="false" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
+          <folding>
+            <element signature="e#1519#1520#0" expanded="true" />
+            <element signature="e#1583#1584#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/dao/SkierDataDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="115" column="15" lean-forward="false" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1509939786000" expanded="true" signature="704:806" ph="INSERT INTO skierdata... " />
+            <marker date="1509939786000" expanded="true" signature="1923:2003" ph="SELECT COUNT... skierdata" />
+            <marker date="1509939786000" expanded="true" signature="3257:3269" ph="DELETE FROM " />
+            <marker date="1509939786000" expanded="true" signature="3257:3278" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/Util/ConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="37" column="55" lean-forward="false" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/RFIDServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="54" column="34" lean-forward="false" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1245">
@@ -565,9 +781,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="39" column="59" lean-forward="false" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/RFIDServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
           <folding>
-            <marker date="1509468790000" expanded="true" signature="1119:1384" ph="CREATE TABLE... IF" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/dao/SkierDataDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2130">
+          <caret line="149" column="9" lean-forward="true" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1509939786000" expanded="true" signature="704:806" ph="INSERT INTO skierdata... " />
+            <marker date="1509939786000" expanded="true" signature="1923:2003" ph="SELECT COUNT... skierdata" />
+            <marker date="1509939786000" expanded="true" signature="3257:3269" ph="DELETE FROM " />
+            <marker date="1509939786000" expanded="true" signature="3257:3278" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="83" column="20" lean-forward="false" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/model/SkierData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="73" column="57" lean-forward="false" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
+          <folding>
+            <element signature="e#1519#1520#0" expanded="true" />
+            <element signature="e#1583#1584#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/Util/ConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="39" column="59" lean-forward="false" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -587,11 +852,10 @@
           <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1509756021000" expanded="true" signature="686:807" ph="INSERT INTO skierdata... " />
-            <marker date="1509756021000" expanded="true" signature="1928:2046" ph="INSERT INTO skierdata... " />
-            <marker date="1509756021000" expanded="true" signature="3166:3246" ph="SELECT COUNT... skierdata" />
-            <marker date="1509756021000" expanded="true" signature="4503:4515" ph="DELETE FROM " />
-            <marker date="1509756021000" expanded="true" signature="4503:4524" ph="DELETE FROM " />
+            <marker date="1509939786000" expanded="true" signature="704:806" ph="INSERT INTO skierdata... " />
+            <marker date="1509939786000" expanded="true" signature="1923:2003" ph="SELECT COUNT... skierdata" />
+            <marker date="1509939786000" expanded="true" signature="3257:3269" ph="DELETE FROM " />
+            <marker date="1509939786000" expanded="true" signature="3257:3278" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -619,9 +883,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="39" column="59" lean-forward="true" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
-          <folding>
-            <marker date="1509468790000" expanded="true" signature="1119:1384" ph="CREATE TABLE... IF" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -641,11 +903,10 @@
           <caret line="109" column="30" lean-forward="false" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1509756021000" expanded="true" signature="686:807" ph="INSERT INTO skierdata... " />
-            <marker date="1509756021000" expanded="true" signature="1928:2046" ph="INSERT INTO skierdata... " />
-            <marker date="1509756021000" expanded="true" signature="3166:3246" ph="SELECT COUNT... skierdata" />
-            <marker date="1509756021000" expanded="true" signature="4503:4515" ph="DELETE FROM " />
-            <marker date="1509756021000" expanded="true" signature="4503:4524" ph="DELETE FROM " />
+            <marker date="1509939786000" expanded="true" signature="704:806" ph="INSERT INTO skierdata... " />
+            <marker date="1509939786000" expanded="true" signature="1923:2003" ph="SELECT COUNT... skierdata" />
+            <marker date="1509939786000" expanded="true" signature="3257:3269" ph="DELETE FROM " />
+            <marker date="1509939786000" expanded="true" signature="3257:3278" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -675,11 +936,10 @@
           <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1509756021000" expanded="true" signature="686:807" ph="INSERT INTO skierdata... " />
-            <marker date="1509756021000" expanded="true" signature="1928:2046" ph="INSERT INTO skierdata... " />
-            <marker date="1509756021000" expanded="true" signature="3166:3246" ph="SELECT COUNT... skierdata" />
-            <marker date="1509756021000" expanded="true" signature="4503:4515" ph="DELETE FROM " />
-            <marker date="1509756021000" expanded="true" signature="4503:4524" ph="DELETE FROM " />
+            <marker date="1509939786000" expanded="true" signature="704:806" ph="INSERT INTO skierdata... " />
+            <marker date="1509939786000" expanded="true" signature="1923:2003" ph="SELECT COUNT... skierdata" />
+            <marker date="1509939786000" expanded="true" signature="3257:3269" ph="DELETE FROM " />
+            <marker date="1509939786000" expanded="true" signature="3257:3278" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -688,9 +948,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1509468790000" expanded="true" signature="1119:1384" ph="CREATE TABLE... IF" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -730,11 +988,10 @@
           <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1509756021000" expanded="true" signature="686:807" ph="INSERT INTO skierdata... " />
-            <marker date="1509756021000" expanded="true" signature="1928:2046" ph="INSERT INTO skierdata... " />
-            <marker date="1509756021000" expanded="true" signature="3166:3246" ph="SELECT COUNT... skierdata" />
-            <marker date="1509756021000" expanded="true" signature="4503:4515" ph="DELETE FROM " />
-            <marker date="1509756021000" expanded="true" signature="4503:4524" ph="DELETE FROM " />
+            <marker date="1509939786000" expanded="true" signature="704:806" ph="INSERT INTO skierdata... " />
+            <marker date="1509939786000" expanded="true" signature="1923:2003" ph="SELECT COUNT... skierdata" />
+            <marker date="1509939786000" expanded="true" signature="3257:3269" ph="DELETE FROM " />
+            <marker date="1509939786000" expanded="true" signature="3257:3278" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -743,9 +1000,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1509468790000" expanded="true" signature="1119:1384" ph="CREATE TABLE... IF" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -778,9 +1033,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/threads/PostServerToDBMultiThread.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/model/SkierStats.java" />
+    <entry file="uml://JAVA/edu.neu.server">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>edu.neu.server</OriginalElement>
+          <nodes>
+            <node x="302.0" y="0.0">edu.neu.server.model.SkierData</node>
+            <node x="173.5" y="514.0">edu.neu.server.RFIDServer</node>
+            <node x="0.0" y="22.0">edu.neu.server.Util.ConnectionManager</node>
+            <node x="50.06666666666666" y="279.0">edu.neu.server.dao.SkierDataDao</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="edu.neu.server.RFIDServer" target="edu.neu.server.dao.SkierDataDao">
+              <point x="0.0" y="-70.0" />
+              <point x="291.0" y="489.0" />
+              <point x="288.56666666666666" y="489.0" />
+              <point x="79.5" y="92.5" />
+            </edge>
+            <edge source="edu.neu.server.dao.SkierDataDao" target="edu.neu.server.Util.ConnectionManager">
+              <point x="0.0" y="-92.5" />
+              <point x="209.06666666666666" y="254.0" />
+              <point x="211.5" y="254.0" />
+              <point x="70.5" y="92.5" />
+            </edge>
+            <edge source="edu.neu.server.dao.SkierDataDao" target="edu.neu.server.model.SkierData">
+              <point x="106.0" y="-92.5" />
+              <point x="315.06666666666666" y="254.0" />
+              <point x="365.0" y="254.0" />
+              <point x="-63.0" y="114.5" />
+            </edge>
+            <edge source="edu.neu.server.RFIDServer" target="edu.neu.server.model.SkierData">
+              <point x="78.33333333333331" y="-70.0" />
+              <point x="369.3333333333333" y="489.0" />
+              <point x="491.0" y="489.0" />
+              <point x="63.0" y="114.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-132.0" y="223.0" />
+          <SelectedNodes>
+            <node>edu.neu.server.dao.SkierDataDao</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/dao/SkierDataDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1509939786000" expanded="true" signature="704:806" ph="INSERT INTO skierdata... " />
+            <marker date="1509939786000" expanded="true" signature="1923:2003" ph="SELECT COUNT... skierdata" />
+            <marker date="1509939786000" expanded="true" signature="3257:3269" ph="DELETE FROM " />
+            <marker date="1509939786000" expanded="true" signature="3257:3278" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/model/SkierData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
+        <state relative-caret-position="521">
           <caret line="73" column="57" lean-forward="false" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
           <folding>
             <element signature="e#1519#1520#0" expanded="true" />
@@ -791,38 +1114,99 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/Util/ConnectionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="39" column="59" lean-forward="false" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
-          <folding>
-            <marker date="1509468790000" expanded="true" signature="1119:1384" ph="CREATE TABLE... IF" />
-          </folding>
+        <state relative-caret-position="-94">
+          <caret line="20" column="58" lean-forward="false" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/RFIDServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+        <state relative-caret-position="180">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/server/dao/SkierDataDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-605">
-          <caret line="97" column="29" lean-forward="false" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1509756021000" expanded="true" signature="686:807" ph="INSERT INTO skierdata... " />
-            <marker date="1509756021000" expanded="true" signature="1928:2046" ph="INSERT INTO skierdata... " />
-            <marker date="1509756021000" expanded="true" signature="3166:3246" ph="SELECT COUNT... skierdata" />
-            <marker date="1509756021000" expanded="true" signature="4503:4515" ph="DELETE FROM " />
-            <marker date="1509756021000" expanded="true" signature="4503:4524" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>assignment-2:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>assignment-2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

@@ -21,8 +21,7 @@ public class PostMultiThread extends Thread {
     @Override
     public void run() {
         for (int i = startIndex; i < endIndex; ++i) {
-            skierClient.postData(TestDataUtil.getRFIDDataIn().get(i), result);
-//            System.out.println(skierClient.postData(TestDataUtil.getRFIDDataIn().get(i), result));    //uncomment for code submission
+            System.out.println(skierClient.postData(TestDataUtil.getRFIDDataIn().get(i), result));
         }
     }
 }

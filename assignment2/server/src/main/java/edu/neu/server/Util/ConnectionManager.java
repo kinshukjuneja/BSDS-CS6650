@@ -13,7 +13,7 @@ public class ConnectionManager {
     // User to connect to your database instance. By default, this is "root".
     private final String USER = "Administrator";
     // Password for the user.
-    private final String PASSWORD = "Neu#4562";
+    private final String PASSWORD = "Bsds#2415";
     // URI to your database server. If running on the same machine, then this is "localhost".
     private final String HOST_NAME = "west-mysql-instance.czpsrugswfv0.us-west-2.rds.amazonaws.com";
     // Port to your database server. By default, this is 3307.
@@ -26,14 +26,6 @@ public class ConnectionManager {
      */
     public Connection getConnection() throws SQLException {
         Connection connection = null;
-//        Statement statement = null;
-//        final String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS skierdata "
-//                + "(resort_id INT, "
-//                + " day_num INT, "
-//                + " skier_id INT, "
-//                + " lift_id INT, "
-//                + " time INT, "
-//                + " total_vertical INT);";
         try {
             Properties connectionProperties = new Properties();
             connectionProperties.put("user", this.USER);
@@ -44,8 +36,6 @@ public class ConnectionManager {
             // One alternative is calling this in the HttpServlet init() override.
             try {
                 Class.forName("com.mysql.jdbc.Driver");
-//                statement = connection.createStatement();
-//                statement.executeQuery(CREATE_TABLE);
             } catch (ClassNotFoundException ex) {
                 Logger.getLogger(ConnectionManager.class.getName()).log(Level.SEVERE, null, ex);
                 throw new SQLException(ex);

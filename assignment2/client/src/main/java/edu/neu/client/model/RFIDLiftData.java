@@ -65,6 +65,6 @@ public class RFIDLiftData implements Serializable, Comparable<RFIDLiftData> {
     public int compareTo(RFIDLiftData compareData) {
         int compareTime = ((RFIDLiftData) compareData).getTime();
         //ascending order
-        return this.time - compareTime ;
+        return this.time - compareTime;
     }
 }
