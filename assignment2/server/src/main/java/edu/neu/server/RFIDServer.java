@@ -11,8 +11,8 @@ import java.sql.SQLException;
  */
 @Path("/")
 public class RFIDServer {
-    private final SkierDataDao skierDataDao = SkierDataDao.getInstance();
-    private final int[] VERTICAL_VALUES = {200,300,400,500};
+    private static final SkierDataDao skierDataDao = SkierDataDao.getInstance();
+    private static final int[] VERTICAL_VALUES = {200,300,400,500};
 
     /**
      * Method handling HTTP GET requests. The returned object will be sent

@@ -11,15 +11,15 @@ import java.util.logging.Logger;
 public class ConnectionManager {
 
     // User to connect to your database instance. By default, this is "root".
-    private final String USER = "Administrator";
+    private static final String USER = "Administrator";
     // Password for the user.
-    private final String PASSWORD = "Bsds#2415";
+    private static final String SECRET = "Bsds#2415";
     // URI to your database server. If running on the same machine, then this is "localhost".
-    private final String HOST_NAME = "west-mysql-instance.czpsrugswfv0.us-west-2.rds.amazonaws.com";
+    private static final String HOST_NAME = "west-mysql-instance.czpsrugswfv0.us-west-2.rds.amazonaws.com";
     // Port to your database server. By default, this is 3307.
-    private final int PORT = 3306;
+    private static final int PORT = 3306;
     // Name of the MySQL schema that contains your tables.
-    private final String SCHEME = "skier";
+    private static final String SCHEME = "skier";
 
     /**
      * Get the connection to the database instance.
@@ -29,7 +29,7 @@ public class ConnectionManager {
         try {
             Properties connectionProperties = new Properties();
             connectionProperties.put("user", this.USER);
-            connectionProperties.put("password", this.PASSWORD);
+            connectionProperties.put("password", this.SECRET);
             connectionProperties.put("useSSL", "false");
             // Ensure the JDBC driver is loaded by retrieving the runtime Class descriptor.
             // Otherwise, Tomcat may have issues loading libraries in the proper order.
