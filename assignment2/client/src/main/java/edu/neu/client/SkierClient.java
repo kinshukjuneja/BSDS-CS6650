@@ -18,7 +18,7 @@ public class SkierClient {
     private String numOfThreads; //Default: 160
     private String ip; //AWS: "35.161.211.30"
     private String port; //Default: "8080"
-    private final String MY_PATH = "/assignment-2/webapi";
+    private static final String MY_PATH = "/assignment-2/webapi";
     private int partition;
     private static final String GET_REQUEST = "GET";
     private static final String POST_REQUEST = "POST";

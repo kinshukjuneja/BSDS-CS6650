@@ -87,8 +87,8 @@ public class Result {
     public void calculateMedian() {
         if(latencyList == null || latencyList.size() == 0) return;
         int size = latencyList.size();
-        if(size % 2 == 0) median = (latencyList.get(size / 2) + latencyList.get((size / 2) + 1)) / 2;
-        else median = latencyList.get(size / 2);
+        if(size % 2 == 0) median = (double) (latencyList.get(size / 2) + latencyList.get((size / 2) + 1)) / 2;
+        else median = (double) latencyList.get(size / 2);
     }
     /**
      * Calculating Percentile for given input: 95/99th Percentile

@@ -11,6 +11,7 @@ public class TestDataUtil {
     private long endTime;
     private long wallTime;
     private static List<RFIDLiftData> RFIDDataIn = new ArrayList<>();
+    private static final String IP = "35-161-211-30"; //replace "-" with "." (Used "-" for security purpose)
 
     public long getStartTime() {
         return startTime;
@@ -55,7 +56,7 @@ public class TestDataUtil {
         if (args.length > 0) inputThreads(args[0], skierClient);
         else inputThreads("128", skierClient);
         if (args.length > 1) inputIp(args[1], skierClient);
-        else inputIp("35.161.211.30", skierClient);
+        else inputIp(IP, skierClient);
         if (args.length > 2) inputPort(args[2], skierClient);
         else inputPort("8080", skierClient);
     }
