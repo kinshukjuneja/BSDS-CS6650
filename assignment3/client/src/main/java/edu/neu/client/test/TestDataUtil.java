@@ -11,7 +11,7 @@ public class TestDataUtil {
     private long endTime;
     private long wallTime;
     private static List<RFIDLiftData> RFIDDataIn = new ArrayList<>();
-    private static final String IP = "mysql-instance.czpsrugswfv0.us-west-2.rds.amazonaws.com"; //skier-956342484.us-west-2.elb.amazonaws.com //replace "-" with "." (Used "-" for security purpose)
+    private static final String IP = "skier-956342484.us-west-2.elb.amazonaws.com"; //skier-956342484.us-west-2.elb.amazonaws.com //replace "-" with "." (Used "-" for security purpose)
 
     public long getStartTime() {
         return startTime;
@@ -54,7 +54,7 @@ public class TestDataUtil {
      */
     public void validateAllInputs(String args[], SkierClient skierClient) {
         if (args.length > 0) inputThreads(args[0], skierClient);
-        else inputThreads("128", skierClient);
+        else inputThreads("50", skierClient);
         if (args.length > 1) inputIp(args[1], skierClient);
         else inputIp(IP, skierClient);
         if (args.length > 2) inputPort(args[2], skierClient);

@@ -30,22 +30,23 @@ public class RFIDServer {
     @Produces(MediaType.TEXT_PLAIN)
     @Consumes(MediaType.TEXT_PLAIN)
     public String getData(@PathParam("skierId") int skierID, @PathParam("dayNum") int dayNum) throws SQLException {
-        long startTime = System.currentTimeMillis();
-        String output = skierDataDao.getDataBySkierIdAndDay(skierID, dayNum);
-        long endTime = System.currentTimeMillis();
-        getMetrics.add(new SkierMetrics(startTime, endTime - startTime));
-        return output;
+//        long startTime = System.currentTimeMillis();
+//        String output = skierDataDao.getDataBySkierIdAndDay(skierID, dayNum);
+//        long endTime = System.currentTimeMillis();
+//        getMetrics.add(new SkierMetrics(startTime, endTime - startTime));
+//        return output;
+          return skierDataDao.getDataBySkierIdAndDay(skierID, dayNum);
     }
 
     @Path("load")
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public void postData(SkierData data) throws SQLException {
-        long startTime = System.currentTimeMillis();
+//        long startTime = System.currentTimeMillis();
         int verticalMetres = calculateVertical(data.getLiftID());
         skierDataDao.insert(data, verticalMetres);
-        long endTime = System.currentTimeMillis();
-        postMetrics.add(new SkierMetrics(startTime, endTime - startTime));
+//        long endTime = System.currentTimeMillis();
+//        postMetrics.add(new SkierMetrics(startTime, endTime - startTime));
     }
 
     private int calculateVertical(int liftID) {

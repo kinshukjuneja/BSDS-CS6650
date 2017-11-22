@@ -9,6 +9,7 @@ import edu.neu.client.statistics.Result;
 public class TestData {
     private static final String POST = "POST";
     private static final String GET = "GET";
+    private static int dayNum = 1;
 
     public static void main(String[] args) {
         TestDataUtil testDataUtil = new TestDataUtil();
@@ -16,7 +17,7 @@ public class TestData {
         PrintResult printResult = new PrintResult();
 
         CSVParser csvParser = new CSVParser();
-        csvParser.parseCSV(1);
+        csvParser.parseCSV(dayNum);
 
         SkierClient skierClient = testDataUtil.buildClient();
         testDataUtil.validateAllInputs(args, skierClient);
@@ -24,11 +25,11 @@ public class TestData {
         skierClient.assignWebTarget();
 
         testDataUtil.setStartTime(System.currentTimeMillis());
-        skierClient.startRequest(skierClient, result, POST);
-        //skierClient.startRequest(skierClient, result, GET);
+        skierClient.startRequest(skierClient, result, POST, dayNum);
+        //skierClient.startRequest(skierClient, result, GET, dayNum);
         testDataUtil.setEndTime(System.currentTimeMillis());
         testDataUtil.setWallTime(testDataUtil.getEndTime() - testDataUtil.getStartTime());
-        skierClient.closeClient();
+        skierClient.closeClient(skierClient);
 
         printResult.printToCsvFormat("Printing result for client metrics: ", result);
 

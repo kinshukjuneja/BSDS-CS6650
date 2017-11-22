@@ -23,9 +23,9 @@ public class CSVParser {
             if (dayNum == 1) initializeReader(CSV_FILE_DAY1);
             else if (dayNum == 2) initializeReader(CSV_FILE_DAY2);
             else if (dayNum == 3) initializeReader(CSV_FILE_DAY3);
-            else if (dayNum == 4) initializeReader(CSV_FILE_DAY3);
-            else if (dayNum == 5) initializeReader(CSV_FILE_DAY3);
-            else if (dayNum == 999) initializeReader(CSV_FILE_DAY3);
+            else if (dayNum == 4) initializeReader(CSV_FILE_DAY4);
+            else if (dayNum == 5) initializeReader(CSV_FILE_DAY5);
+            else if (dayNum == 999) initializeReader(CSV_FILE_DAY999);
             else return;
             String[] line;
             RFIDLiftData parseRFID;

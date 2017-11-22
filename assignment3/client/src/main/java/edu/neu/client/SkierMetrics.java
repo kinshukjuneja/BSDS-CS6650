@@ -30,7 +30,7 @@ public class SkierMetrics {
     }
 
     public void getMetrics(String requestType, Result result) {
-        Response response = webTarget.path("metrics" + requestType).request(MediaType.TEXT_PLAIN).get(Response.class);
+        Response response = webTarget.path("metrics/" + requestType).request(MediaType.TEXT_PLAIN).get(Response.class);
         String output = response.readEntity(String.class);
         output = output.replace("[", "").replace("]", "");
         metricsList = new ArrayList<>(Arrays.asList(output.split(",")));
@@ -41,7 +41,7 @@ public class SkierMetrics {
         }
     }
 
-    public void closeClient() {
-        client.close();
+    public void closeClient(SkierMetrics skierMetrics) {
+        skierMetrics.client.close();
     }
 }

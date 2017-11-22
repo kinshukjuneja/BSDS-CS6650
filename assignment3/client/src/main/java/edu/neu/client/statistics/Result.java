@@ -110,7 +110,8 @@ public class Result {
             if(min > val) min = val;
             if(max < val) max = val;
         }
-        throughPut = (((max - min) / 1000) / getStartTimeList().size());
+        System.out.println("Wall time: " + ((max - min) / 1000) + " secs");
+        throughPut = ((getStartTimeList().size()) / ((max - min) / 1000));
         return throughPut;
     }
 
@@ -123,6 +124,15 @@ public class Result {
         }
         for(long val: result3.getLatencyList()) {
             latencyList.add(val);
+        }
+        for(long val: result1.getStartTimeList()) {
+            startTimeList.add(val);
+        }
+        for(long val: result2.getStartTimeList()) {
+            startTimeList.add(val);
+        }
+        for(long val: result3.getStartTimeList()) {
+            startTimeList.add(val);
         }
     }
 }

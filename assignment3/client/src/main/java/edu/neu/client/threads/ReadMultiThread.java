@@ -22,7 +22,7 @@ public class ReadMultiThread extends Thread {
     @Override
     public void run() {
         for (int i = startIndex; i < endIndex; ++i) {
-            System.out.println(skierClient.getData(TestDataUtil.getRFIDDataIn().get(i).getSkierID(), day, result));
+            skierClient.getData(TestDataUtil.getRFIDDataIn().get(i).getSkierID(), day, result);
         }
     }
 }

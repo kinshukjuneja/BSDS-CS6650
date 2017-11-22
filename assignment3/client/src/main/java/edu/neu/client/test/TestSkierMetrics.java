@@ -29,19 +29,19 @@ public class TestSkierMetrics {
         Result resultServer1 = new Result();
         PrintResult printResult = new PrintResult();
         skierMetrics.setWebTarget(BASE_URI_1); //"35.161.211.30:8080/assignment-2/webapi/"
-        //skierMetrics.getMetrics(GET_REQUEST, resultServer1);
-        skierMetrics.getMetrics(POST_REQUEST, resultServer1);
+//        skierMetrics.getMetrics(GET_REQUEST, resultServer1);
+        //skierMetrics.getMetrics(POST_REQUEST, resultServer1);
 
         Result resultServer2 = new Result();
         skierMetrics.setWebTarget(BASE_URI_2);
-        //skierMetrics.getMetrics(GET_REQUEST, resultServer2);
-        skierMetrics.getMetrics(POST_REQUEST, resultServer2);
+        skierMetrics.getMetrics(GET_REQUEST, resultServer2);
+        //skierMetrics.getMetrics(POST_REQUEST, resultServer2);
 
         Result resultServer3 = new Result();
         skierMetrics.setWebTarget(BASE_URI_3);
-        //skierMetrics.getMetrics(GET_REQUEST, resultServer3);
-        skierMetrics.getMetrics(POST_REQUEST, resultServer3);
-        skierMetrics.closeClient();
+        skierMetrics.getMetrics(GET_REQUEST, resultServer3);
+        //skierMetrics.getMetrics(POST_REQUEST, resultServer3);
+        skierMetrics.closeClient(skierMetrics);
 
         Result allResult = new Result();
         allResult.buildCollectiveList(resultServer1, resultServer2, resultServer3);

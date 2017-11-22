@@ -68,13 +68,13 @@ public class SkierClient {
         webTarget = client.target(buildURI());
     }
 
-    public void startRequest(SkierClient skierClient, Result result, String requestType) {
+    public void startRequest(SkierClient skierClient, Result result, String requestType, int dayNum) {
         ExecutorService executor = Executors.newFixedThreadPool(Integer.valueOf(numOfThreads));
         for (int i = 0; i < Integer.valueOf(numOfThreads); ++i) {
             if (requestType.equals(POST_REQUEST)) {
                 executor.submit(new PostMultiThread(i * skierClient.getPartition(), (i + 1) * skierClient.getPartition(), skierClient, result));
             } else if (requestType.equals(GET_REQUEST)) {
-                executor.submit(new ReadMultiThread(i * skierClient.getPartition(), (i + 1) * skierClient.getPartition(), skierClient, result, 1));
+                executor.submit(new ReadMultiThread(i * skierClient.getPartition(), (i + 1) * skierClient.getPartition(), skierClient, result, dayNum));
             }
         }
         executor.shutdown();
@@ -111,7 +111,7 @@ public class SkierClient {
         return response.readEntity(String.class);
     }
 
-    public void closeClient() {
-        client.close();
+    public void closeClient(SkierClient skierClient) {
+        skierClient.client.close();
     }
 }

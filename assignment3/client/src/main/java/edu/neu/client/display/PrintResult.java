@@ -43,7 +43,7 @@ public class PrintResult {
     }
 
     public void printCalculatedThroughput(Result result) {
-        System.out.println("Throughput: " + result.calculateThroughput() + " /second");
+        System.out.println("Throughput: " + result.calculateThroughput() + "/secs");
     }
 
     public void printToCsvFormat(String info, Result result) {
@@ -64,5 +64,6 @@ public class PrintResult {
         printMedianLatency(result);
         printCalculatedPercentile(99, result);
         printCalculatedPercentile(95, result);
+        printCalculatedThroughput(result);
     }
 }
