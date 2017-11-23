@@ -9,7 +9,7 @@ import edu.neu.client.statistics.Result;
 public class TestData {
     private static final String POST = "POST";
     private static final String GET = "GET";
-    private static int dayNum = 1;
+    private static int dayNum = 4;
 
     public static void main(String[] args) {
         TestDataUtil testDataUtil = new TestDataUtil();
@@ -21,7 +21,7 @@ public class TestData {
 
         SkierClient skierClient = testDataUtil.buildClient();
         testDataUtil.validateAllInputs(args, skierClient);
-        skierClient.setPartition(TestDataUtil.getRFIDDataIn().size() / Integer.valueOf(skierClient.getNumOfThreads()));
+        skierClient.setPartition(TestDataUtil.getRFIDDataIn().size() / Integer.valueOf(skierClient.getNumOfThreads())); //TestDataUtil.getRFIDDataIn().size()
         skierClient.assignWebTarget();
 
         testDataUtil.setStartTime(System.currentTimeMillis());
@@ -30,12 +30,12 @@ public class TestData {
         testDataUtil.setEndTime(System.currentTimeMillis());
         testDataUtil.setWallTime(testDataUtil.getEndTime() - testDataUtil.getStartTime());
         skierClient.closeClient(skierClient);
-
-        printResult.printToCsvFormat("Printing result for client metrics: ", result);
-
-        result.sortList();
-        result.calculateMean();
-        result.calculateMedian();
-        printResult.printToConsole(skierClient, testDataUtil, result);
+//
+//        printResult.printToCsvFormat("Printing result for client metrics: ", result);
+//
+//        result.sortList();
+//        result.calculateMean();
+//        result.calculateMedian();
+//        printResult.printToConsole(skierClient, testDataUtil, result);
     }
 }

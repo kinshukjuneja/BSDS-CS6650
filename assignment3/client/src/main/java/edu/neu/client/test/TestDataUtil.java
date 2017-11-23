@@ -54,7 +54,7 @@ public class TestDataUtil {
      */
     public void validateAllInputs(String args[], SkierClient skierClient) {
         if (args.length > 0) inputThreads(args[0], skierClient);
-        else inputThreads("50", skierClient);
+        else inputThreads("100", skierClient);
         if (args.length > 1) inputIp(args[1], skierClient);
         else inputIp(IP, skierClient);
         if (args.length > 2) inputPort(args[2], skierClient);
