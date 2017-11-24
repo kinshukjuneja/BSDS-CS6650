@@ -13,12 +13,12 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class SkierClient {
-    private Client client; //To be initialized when creating an instance of this class
-    private WebTarget webTarget; //Created after ip and port is given at terminal
-    private String numOfThreads; //Default: 160
-    private String ip; //AWS: "35.161.211.30"
-    private String port; //Default: "8080"
-    private static final String MY_PATH = "/assignment-3/webapi/"; //assignment-3/webapi/
+    private Client client;
+    private WebTarget webTarget;
+    private String numOfThreads;
+    private String ip;
+    private String port;
+    private static final String MY_PATH = "/assignment-3/webapi/";
     private int partition;
     private static final String GET_REQUEST = "GET";
     private static final String POST_REQUEST = "POST";
@@ -111,7 +111,7 @@ public class SkierClient {
         return response.readEntity(String.class);
     }
 
-    public void closeClient(SkierClient skierClient) {
-        skierClient.client.close();
+    public void closeClient() {
+        client.close();
     }
 }

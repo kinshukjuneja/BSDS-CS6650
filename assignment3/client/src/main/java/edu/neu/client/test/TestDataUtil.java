@@ -11,7 +11,7 @@ public class TestDataUtil {
     private long endTime;
     private long wallTime;
     private static List<RFIDLiftData> RFIDDataIn = new ArrayList<>();
-    private static final String IP = "skier-956342484.us-west-2.elb.amazonaws.com"; //skier-956342484.us-west-2.elb.amazonaws.com //replace "-" with "." (Used "-" for security purpose)
+    private static final String IP = "skier-956342484.us-west-2.elb.amazonaws.com";
 
     public long getStartTime() {
         return startTime;

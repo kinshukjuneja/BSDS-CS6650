@@ -41,7 +41,7 @@ public class SkierMetrics {
         }
     }
 
-    public void closeClient(SkierMetrics skierMetrics) {
-        skierMetrics.client.close();
+    public void closeClient() {
+        client.close();
     }
 }

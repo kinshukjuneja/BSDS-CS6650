@@ -1,6 +1,0 @@
-projectKey=test123:test123-2
-serverUrl=http://52.87.61.38/sonar
-serverVersion=6.5.0.27846
-dashboardUrl=http://52.87.61.38/sonar/dashboard/index/test123:test123-2
-ceTaskId=AV-ZkB0Wt9ChU65oIe3O
-ceTaskUrl=http://52.87.61.38/sonar/api/ce/task?id=AV-ZkB0Wt9ChU65oIe3O

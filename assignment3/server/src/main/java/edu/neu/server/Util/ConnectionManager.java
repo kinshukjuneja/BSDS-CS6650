@@ -13,9 +13,9 @@ public class ConnectionManager {
     // User to connect to your database instance. By default, this is "root".
     private static final String USER = "Administrator";
     // Password for the user.
-    private static final String SECRET = "Neu#4562"; //rdsdbski
+    private static final String SECRET = "BSDS#4562";
     // URI to your database server. If running on the same machine, then this is "localhost".
-    private static final String HOST_NAME = "mysql-instance.czpsrugswfv0.us-west-2.rds.amazonaws.com"; //"west-mysql-instance.czpsrugswfv0.us-west-2.rds.amazonaws.com";
+    private static final String HOST_NAME = "mysql-instance.czpsrugswfv0.us-west-2.rds.amazonaws.com";
     // Port to your database server. By default, this is 3307.
     private static final int PORT = 3306;
     // Name of the MySQL schema that contains your tables.
